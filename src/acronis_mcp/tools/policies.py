@@ -23,7 +23,7 @@ def register(mcp: FastMCP, client_factory: Callable[[], AcronisClient | None]) -
         limit: int | None = None,
         after: str | None = None,
         before: str | None = None,
-        extra_params: dict | None = None,
+        extra_params: dict[str, object] | None = None,
     ) -> str:
         """Fetch a list of protection policies.
 
@@ -80,7 +80,7 @@ def register(mcp: FastMCP, client_factory: Callable[[], AcronisClient | None]) -
         limit: int | None = None,
         after: str | None = None,
         before: str | None = None,
-        extra_params: dict | None = None,
+        extra_params: dict[str, object] | None = None,
     ) -> str:
         """Fetch a list of policy applications (policy-to-resource bindings).
 

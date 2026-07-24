@@ -23,7 +23,7 @@ def register(mcp: FastMCP, client_factory: Callable[[], AcronisClient | None]) -
         order: str | None = None,
         updated_at: str | None = None,
         created_at: str | None = None,
-        extra_params: dict | None = None,
+        extra_params: dict[str, object] | None = None,
     ) -> str:
         """Fetch all alerts by optional filtering parameters.
 
@@ -76,7 +76,7 @@ def register(mcp: FastMCP, client_factory: Callable[[], AcronisClient | None]) -
         category: str | None = None,
         query: str | None = None,
         show_deleted: bool | None = None,
-        extra_params: dict | None = None,
+        extra_params: dict[str, object] | None = None,
     ) -> str:
         """Fetch alerts grouped per customer.
 
@@ -117,7 +117,7 @@ def register(mcp: FastMCP, client_factory: Callable[[], AcronisClient | None]) -
         type: str | None = None,
         category: str | None = None,
         show_deleted: bool | None = None,
-        extra_params: dict | None = None,
+        extra_params: dict[str, object] | None = None,
     ) -> str:
         """Fetch count of alerts per customer (customers with no alerts are omitted).
 

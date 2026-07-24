@@ -23,7 +23,7 @@ def register(mcp: FastMCP, client_factory: Callable[[], AcronisClient | None]) -
         after: str | None = None,
         order: str | None = None,
         lod: str | None = None,
-        extra_params: dict | None = None,
+        extra_params: dict[str, object] | None = None,
     ) -> str:
         """Fetch a list of tasks.
 
@@ -80,7 +80,7 @@ def register(mcp: FastMCP, client_factory: Callable[[], AcronisClient | None]) -
         after: str | None = None,
         order: str | None = None,
         lod: str | None = None,
-        extra_params: dict | None = None,
+        extra_params: dict[str, object] | None = None,
     ) -> str:
         """Fetch a list of task activities.
 
